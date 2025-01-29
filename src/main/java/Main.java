@@ -39,7 +39,7 @@ public class Main {
                 }
             } else {
                 System.out.println("Некорректный ввод. Введите скорость в целочисленном диапозоне от 0 до 250.");
-                scanner1.next();
+                scanner1.nextLine();
             }
         }
     }
