@@ -5,14 +5,13 @@ class Race {
     public void makeRace(Car newCar) {
         int time = 24;
         int distance = time * newCar.speed;
-        if (distance > this.leadDistance) {
-            this.leadRace = newCar.brand;
-            this.leadDistance = distance;
+        if (distance == leadDistance) {
+            draw = -1;
         }
-
-        if (distance == this.leadDistance) {
-            this.draw = -1;
+        if (distance > leadDistance) {
+            leadRace = newCar.brand;
+            leadDistance = distance;
+            draw = 0;
         }
-
     }
 }
