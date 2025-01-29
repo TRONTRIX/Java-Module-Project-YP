@@ -17,9 +17,7 @@ public class Main {
         if (carLeader.draw == 0) {
             System.out.println("Победитель гонки «24 часа Ле-Мана»: " + carLeader.leadRace);
             System.out.println("Финишировавшая машина проехала: " + carLeader.leadDistance + " км");
-        }
-
-        if (carLeader.draw == -1) {
+        } else {
             System.out.println("Победитель гонки «24 часа Ле-Мана» не установлен, так как ничья.");
             System.out.println("Максимальное расстояние пройденное за гонку: " + carLeader.leadDistance);
         }
